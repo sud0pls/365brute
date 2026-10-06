@@ -173,7 +173,7 @@ big_list_of_codes = {
 
 description = """
 365brute - Microsoft 365 / Entra ID Password Sprayer
-Output styled like NetExec. Updated for 2024+ endpoints.
+Updated for 2024+ endpoints.
 """
 
 epilog = """

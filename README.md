@@ -1,6 +1,6 @@
 # 365brute
 
-Microsoft 365 / Entra ID password sprayer with NetExec-style output. Updated for 2024+ Microsoft endpoints.
+Microsoft 365 / Entra ID password sprayer. Updated for 2024+ Microsoft endpoints.
 
 Performs password spraying against Microsoft Online accounts (Azure/O365/Entra ID). Detects valid credentials, MFA status, account lockouts, disabled accounts, conditional access policies, and expired passwords.
 
@@ -50,7 +50,7 @@ python3 365brute.py -u userlist.txt -P passwords.txt -d 1800 --url https://api-g
 
 ## Output
 
-Output follows the NetExec format:
+Output format:
 
 ```
 ENTRA  login.microsoftonline.com   443  [*] Spraying password 1/5: Winter2025!
